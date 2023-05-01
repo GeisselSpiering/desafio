@@ -1,4 +1,7 @@
-def invert(text):
-    return text[::-1]
-print(invert('INVERTER'))
-print(invert('INVERTER A ORDEM DESSE TEXTO'))
+string = "INVERTER O TEXTO"
+string_invertida = ""
+
+for i in range(len(string) - 1, -1, -1):
+    string_invertida += string[i]
+
+print(string_invertida)
